@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class AmazonListners {
 
-	static WebDriver driver;
+	static WebDriver driver;//webdriver declare globly
 	
 	@Test(priority=1)
 	public void navToURL()
@@ -58,6 +58,6 @@ public class AmazonListners {
 		
 		driver.findElement(By.xpath("//*[@id='add-to-cart-button']")).click();
 		
-		
+		driver.findElement(By.xpath("//*[@id='add-to-cart-button22']")).click();//wrong xpath
 	}
 }
